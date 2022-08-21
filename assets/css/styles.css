@@ -240,4 +240,8 @@ font-family: 'Open Sans', sans-serif;
     .menu-spacing {
         display: none;
     }
+
+    h1, h2 {
+        font-size: 5rem;
+    }
 }
