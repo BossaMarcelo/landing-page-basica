@@ -18,24 +18,235 @@
     <title>Landing Page</title>
 </head>
 
-<body class="main-bg">
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
-        <section class="main-content menu-content">
-            <h1><a href="#">logo</a></h1>
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">logo</a></h1>
             <nav>
-                <ul>
-                    <li><a href="#">intro</a></li>
-                    <li><a href="#">top 3</a></li>
-                    <li><a href="#">gallery</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#top3">top 3</a></li>
+                    <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#table">table</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-        </section>
+        </div>
     </aside>
-    <section class="section main-bg"></section>
-    <section class="section white-bg"></section>
+    <div class="menu-spacing"></div>
+    <section id="home" class="home main-bg section">
+        <div class="main-content home-content">
+            <div class="home-text">
+                <h2>GitHub Pages now uses Actions by default</h2>
+                <p>As GitHub Pages, home to 16 million websites, approaches its 15th anniversary, we’re excited to
+                    announce that all sites now build and deploy with GitHub Actions.</p>
+            </div>
+            <div class="home-img">
+                <img src="assets/img/intro-img.svg" alt="Homem com computador desenvolvendo um website">
+            </div>
+        </div>
+    </section>
+    <section id="intro" class="white-bg section">
+        <div class="main-content intro-content">
+            <h2>A bright future powered by GitHub Actions</h2>
+            <p>Since December 2021, GitHub Pages sites for public repositories have been built and deployed with GitHub
+                Actions.</p>
+            <p>Based on over six months of observations on over seven million builds a month, we made some adjustments
+                and improvements to the overall flow, and we are now ready to use GitHub Actions to build and deploy
+                private and internal repositories, too.</p>
+            <p>GitHub Actions has the added benefit of introspection—it’s not a black box like before that could obscure
+                build failures. In addition, GitHub Actions has the backing of hundreds of engineers here at GitHub and
+                a rich community with over 14,000 GitHub Actions in the GitHub Marketplace providing yet more features
+                and helping you customize your site publishing workflow exactly how you like it. For example, starting
+                today you can include injecting secrets in your build process, gate deployments to require approvals
+                before publishing, or add a build check to prevent bad commits from being deployed.</p>
+        </div>
+    </section>
+    <section id="top3" class="main-bg section">
+        <div class="top3-content main-content">
+            <h2 class="grid-main-heading">top 3 sports</h2>
+            <p class="grid-description">Some of the most popular sports in the world.</p>
+            <div class="grid">
+                <article>
+                    <h3>First</h3>
+                    <p>Football, better known as soccer in the US and Canada, is the most popular sport in the world,
+                        with
+                        an estimated following of 4 billion fans.</p>
+                </article>
+                <article>
+                    <h3>Second</h3>
+                    <p>Cricket boasts a fan base of 2.5 billion. The game is most popular in the UK and some former
+                        British
+                        colonies, notably India, Pakistan and Australia.</p>
+                </article>
+                <article>
+                    <h3>Third</h3>
+                    <p>Hockey, both on ice and in a field, boasts a following of two billion people. Field hockey is
+                        mainly
+                        played in Europe, Africa, Asia, and Australia, whereas ice hockey is particularly popular in
+                        Canada,
+                        the US, and Northern Europe.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="section white-bg">
+        <div class="main-content">
+            <div class="gallery-content">
+                <h2 class="grid-main-heading">Gallery</h2>
+                <p class="grid-description">Some random pictures</p>
+                <div class="grid">
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="main-bg section">
+        <div class="top3-content main-content">
+            <h2 class="grid-main-heading">Test Grid</h2>
+            <p class="grid-description">Simple description for test grid.</p>
+            <div class="grid">
+                <article>
+                    <h3>Test 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum quaerat reprehenderit
+                        atque et expedita dicta ab voluptatum sit, officiis quam, quos ducimus obcaecati ipsum?
+                        Repellendus quidem sint placeat sit?</p>
+                </article>
+                <article>
+                    <h3>Test 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A corporis consequatur enim? Soluta
+                        facilis accusantium temporibus a autem aliquam? Repellat recusandae quaerat magnam pariatur
+                        sequi. Quam dolorum libero quaerat ea.</p>
+                </article>
+                <article>
+                    <h3>Test 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio possimus modi qui dicta? Dolore
+                        quaerat cum corporis hic mollitia accusantium quo culpa. Totam, quidem facilis! Quis praesentium
+                        dicta vitae? Tempora.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="table" class="white-bg section">
+        <div class="main-content intro-content">
+            <h2>Pricing</h2>
+            <p>This is a test for the implementation of a pricing table.</p>
+            <p>This sort of table can receive various contents and present in many ways.</p>
+            <div class="responsive-table">
+                <table>
+                    <caption>Pricing table</caption>
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                            <th>Title 4</th>
+                            <th>Title 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                            <td>Content 4</td>
+                            <td>Content 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Final Content</td>
+                        </tr>
+                    </tfoot>                    
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="home main-bg section">
+        <div class="main-content home-content">
+            <div class="home-text">
+                <h2>contact us</h2>
+                <p>If there's any doubt, question, or suggestion please contact us.</p>
+                <p>We'd love to help you, or hear your thoughts.</p>
+            </div>
+            <div class="home-img">
+                <img src="assets/img/contact-us.svg"
+                    alt="Mulher segurando uma carta ao lado de um celular e um telefone">
+            </div>
+        </div>
+        <div class="contact-form main-content">
+            <fieldset class="form-grid">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here."></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Send message</button>
+                </div>
 
+            </fieldset>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p><a rel="nofollow" target="_blank" href="https://github.com/BossaMarcelo">Feito com <span
+                    class="heart">♥</span> por Marcelo Rodrigues</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">➢</a>
 </body>
 
 </html>
